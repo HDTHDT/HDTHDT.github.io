@@ -76,8 +76,7 @@ function renderProject() {
         </div>
       </section>
       <section class="detail-story">
-        <p>EXPERIENCE / SYSTEM</p>
-        <div><h2>核心体验</h2><p>${project.description}</p>${actionMarkup(project.action)}</div>
+        <div><p>${project.description}</p>${actionMarkup(project.action)}</div>
       </section>
       ${project.video ? `<figure class="detail-media"><video src="${project.video}" poster="${project.image}" controls muted loop playsinline preload="metadata"></video><figcaption>PLAYABLE DEMO / CAPTURE</figcaption></figure>` : ""}
       <figure class="detail-media secondary-media"><img src="${project.secondary}" alt="${project.secondaryAlt}" loading="lazy"><figcaption>SECONDARY RECORD / ${project.title}</figcaption></figure>
