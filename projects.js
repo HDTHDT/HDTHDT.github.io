@@ -23,7 +23,7 @@ const PROJECTS = [
     status: "WINDOWS BUILD", layout: "tall", tone: "acid",
     image: "assets/works/twins-combat.jpg", secondary: "assets/works/twins-barrage.jpg",
     alt: "光暗双生合作战斗画面", secondaryAlt: "光暗双生弹幕战斗画面",
-    lead: "一人倒下，另一人必须穿过弹幕把搭档抢回来。",
+    lead: "共享的不只是战场，还有相依为命的羁绊。",
     description: "光与暗拥有不同的攻防能力，并通过距离、能量与复活机制相互牵制。反射弹幕、掩护走位和救援时机共同决定每一轮战斗的节奏。",
     tags: ["GODOT", "DUAL STATE", "REVIVE LINK", "PROJECTILE REFLECT", "SHOP LOOP"],
     action: { label: "GET WINDOWS DEMO ↓", href: "https://github.com/HDTHDT/HDTHDT.github.io/releases/download/v1.0.0/light-dark-twins-win.zip" }
@@ -36,7 +36,7 @@ const PROJECTS = [
     lead: "前进的关键不是绕过障碍，而是改变自身遵守的规则。",
     description: "有限状态受碰撞与重力约束，无限状态则可以穿过边界。玩家需要在两种状态之间切换，借助局部引力、传送带和激光完成路径解题。",
     tags: ["GODOT", "STATE SWITCH", "RANGE GRAVITY", "COLLISION", "PHYSICS TUNING"],
-    action: { label: "WATCH DEMO ↗", href: "https://www.bilibili.com/video/BV1LRhSeMEkb", external: true }
+    action: { label: "GET WINDOWS DEMO ↓", href: "https://github.com/HDTHDT/HDTHDT.github.io/releases/download/v1.0.0/limitless-win.zip" }
   },
   {
     id: "nightshift", index: "05", title: "NIGHT SHIFT", type: "NARRATIVE PUZZLE / STATE UI",
@@ -53,15 +53,15 @@ const PROJECTS = [
     status: "GGJ 2025", layout: "small", tone: "yellow",
     image: "assets/works/wok-cover.jpg", secondary: "assets/works/wok-cards.jpg",
     alt: "冒泡的锅封面插画", secondaryAlt: "冒泡的锅实体卡牌",
-    lead: "每次加料，都是一次带有隐藏信息的试探。",
+    lead: "每次加料，都是一次糊锅的试探。",
     description: "玩家轮流向锅中加料，也可以检查、转移或放大风险。角色能力和特殊泡泡不断改变局势，胜负取决于读牌、试探与及时收手。",
     tags: ["BOARD GAME", "HIDDEN INFO", "TURN PHASE", "ROLE SKILL", "RISK CONTROL"]
   },
   {
     id: "vr", index: "07", title: "VR MUSEUM", type: "XR EXHIBITION / AI GUIDE",
     status: "HEADSET REQUIRED", layout: "standard", tone: "lab",
-    image: "assets/works/vr-entry.jpg", secondary: "assets/works/vr-guide.jpg",
-    alt: "VR 博物馆入口空间", secondaryAlt: "VR 博物馆 AI 数字讲解员",
+    image: "assets/works/vr-entry.jpg", secondary: "assets/works/vr-guide.jpg", secondaryPair: "assets/works/vr-museum-scene.png",
+    alt: "VR 博物馆入口空间", secondaryAlt: "VR 博物馆 AI 数字讲解员", secondaryPairAlt: "VR 博物馆展厅场景",
     lead: "信息不再附着于展板，而是分布在参观者的行走路径上。",
     description: "文物节点、空间导览和数字人对话共同组织参观动线。界面与提示依据头显中的观看距离重新排布，保证移动和驻足时都能清楚读取。",
     tags: ["UNREAL ENGINE 5.5", "OPENXR", "CONVAI", "SPATIAL UI", "VR PERFORMANCE"]

@@ -78,7 +78,13 @@ function renderProject() {
         <div><p>${project.description}</p>${actionMarkup(project.action)}</div>
       </section>
       ${project.video ? `<figure class="detail-media"><video src="${project.video}" poster="${project.image}" controls muted loop playsinline preload="metadata"></video><figcaption>PLAYABLE DEMO / CAPTURE</figcaption></figure>` : ""}
-      <figure class="detail-media secondary-media"><img src="${project.secondary}" alt="${project.secondaryAlt}" loading="lazy"><figcaption>SECONDARY RECORD / ${project.title}</figcaption></figure>
+      <figure class="detail-media secondary-media">
+        <div class="detail-media-frame ${project.secondaryPair ? "media-pair" : ""}">
+          <img src="${project.secondary}" alt="${project.secondaryAlt}" loading="lazy">
+          ${project.secondaryPair ? `<img src="${project.secondaryPair}" alt="${project.secondaryPairAlt}" loading="lazy">` : ""}
+        </div>
+        <figcaption>SECONDARY RECORD / ${project.title}</figcaption>
+      </figure>
       <nav class="record-nav" aria-label="相邻项目">
         <a href="project.html?id=${previous.id}"><span>← PREVIOUS</span><strong>${previous.title}</strong></a>
         <a href="index.html#guide"><span>PROJECT</span><strong>GUIDE</strong></a>
