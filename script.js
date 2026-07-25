@@ -71,7 +71,6 @@ function renderProject() {
       <section class="detail-overview">
         <p class="detail-lead">${project.lead}</p>
         <div class="detail-meta">
-          <dl><div><dt>ENGINE</dt><dd>${project.engine}</dd></div><div><dt>STATE</dt><dd>${project.status}</dd></div></dl>
           <ul>${project.tags.map(tag => `<li>${tag}</li>`).join("")}</ul>
         </div>
       </section>
